@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS page</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: o;
+    }
+
+    body{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: white;
+
+    }
+    
+    .nav{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(70, 70, 190);
+        padding: 10px;
+    }
+    .nav header{
+
+        color: rgba(252, 95, 4, 0.986);
+        padding-left: 15px;
+        padding-top:10px ;
+        letter-spacing: 2px;
+    
+        
+    } 
+    .nav span{
+        color: white;
+        font-weight: 900;
+    }
+    .nav a{
+        text-decoration: none;
+        padding: 10px;
+        color: white;
+        height: 40px;
+        width: auto;
+        
+    }
+    .nav a:hover{
+        background-color: white;
+        color: rgb(255, 115, 0);
+        border-radius: 10px;
+        font-weight: 900;
+    }
+    .nav header:hover{
+        cursor: pointer;
+        
+    }
+
+    .about h2{
+        text-align: center;
+        letter-spacing: 1px;
+        font-weight: 900;
+        padding-top: 30px;
+        font-style:oblique;
+        
+    }
+    .about p{
+        padding-top: 10px;
+        text-align: justify;
+        font-style:oblique;
+        text-transform: capitalize;
+        line-height:25px;
+    }
+    .about h2:hover{
+        cursor: pointer;
+    }
+    .speakergrid{
+    max-width: 1200px;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+
+    
+}
+.speakercard{
+    display:grid;
+    grid-template-columns: 35% 65%;
+    border-radius: 10px;
+    border: 1px solid lightblue;
+    box-shadow: 0 3px 3px 0 rgb(7, 31, 77);
+    height: 300px;
+    
+}
+.card1 img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.cardcontant p{
+    margin-bottom: 6px;
+    margin-top: 5px;
+
+}
+    
+</style>
+<body>
+    <div class="nav">
+        <header><h2><span>Muhammad</span>Osama</h2></header>
+        <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contect</a>
+    </nav>
+
+    </div>
+    
+
+    <section class="about">
+        <h2>About me</h2>
+        <p>I am Muhammad Osama, a BS Software Engineering student at Abasyn University Peshawar with a strong interest in web development, graphic design, and software engineering. I have experience working with HTML and CSS and I am currently improving my programming and development skills, including Python. Alongside my studies, I work on creative designs using tools such as Photoshop and Illustrator, and I enjoy building professional websites and digital projects. My goal is to become a successful software engineer and eventually build my own software engineering company. I am passionate about learning new technologies, improving my skills, and turning creative ideas into practical digital solutions.</p>
+    </section>
+    <div class="speakergrid">
+    <div class="speakercard">
+      <div class="card1">
+        <img src="card1.png">
+      </div>
+     
+        <div class="cardcontant">
+        <p><strong>Osama khan</strong> </p>
+
+        <h5>AI Research Scientist</h5>
+
+        <p>TechVision Labs</p>
+
+        <h4>Session:</h4>
+
+        <p>Keynote: The Future of AI</p>
+
+        <p>
+        Osama Khan is an AI researcher with 10+ years of experience
+        in machine learning and natural language processing.
+        </p>
+        <a href="#">View Profile</a>
+
+        </div>
+      
+
+      </div> 
+
+       <div class="speakercard">
+      <div class="card1">
+        <img src="card1.png">
+      </div>
+     
+        <div class="cardcontant">
+        <p><strong>Osama khan</strong> </p>
+
+        <h5>AI Research Scientist</h5>
+
+        <p>TechVision Labs</p>
+
+        <h4>Session:</h4>
+
+        <p>Keynote: The Future of AI</p>
+
+        <p>
+        Osama Khan is an AI researcher with 10+ years of experience
+        in machine learning and natural language processing.
+        </p>
+        <a href="#">View Profile</a>
+
+        </div>
+      
+
+      </div> 
+
+       <div class="speakercard">
+      <div class="card1">
+        <img src="card1.png">
+      </div>
+     
+        <div class="cardcontant">
+        <p><strong>Osama khan</strong> </p>
+        <h5>AI Research Scientist</h5>
+
+        <p>TechVision Labs</p>
+
+        <h4>Session:</h4>
+
+        <p>Keynote: The Future of AI</p>
+
+        <p>
+        Osama Khan is an AI researcher with 10+ years of experience
+        in machine learning and natural language processing.
+        </p>
+        <a href="#">View Profile</a>
+
+        </div>
+      
+
+      </div> 
+    </div>
+
+    </div>
+
+    <section class="colors">
+        <div class="c1">Name</div>
+        <div class="c2">Hex</div>
+        <div class="c3">RGB</div>
+        <div class="c4">RGBA</div>
+    </section>
+
+   <footer><p>@ 2026 Techconnect</p></footer>
+
+</body>
+</html>
